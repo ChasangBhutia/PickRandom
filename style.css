@@ -37,8 +37,9 @@ body {
     justify-content: center;
   }
   .buttons button {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
   }
   
   .container {
@@ -96,3 +97,26 @@ body {
     font-size: 20px;
   }
   
+
+  @media screen and (max-width:838px){
+    nav{
+      padding: 0px 10px;
+    }
+  }
+
+    
+
+  @media screen and (max-width:525px){
+    nav h1{
+      font-size: 20px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width:418px){
+    nav ul{
+      gap:20px;
+    }
+  }
