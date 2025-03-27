@@ -3,6 +3,22 @@ const year = date.getFullYear();
 document.getElementById("year").innerText = year;
 const personName = document.getElementById("personName");
 
+document.getElementById("copyButton").addEventListener("click", function () {
+  const textToCopy = document.getElementById("quote").innerHTML;
+
+  navigator.clipboard.writeText(textToCopy).then(() => {
+      const message = document.getElementById("copyMessage");
+      message.innerText = "Copied to clipboard!";
+      
+      setTimeout(() => {
+          message.innerText = "";
+      }, 2000);
+  }).catch(err => {
+      console.error("Failed to copy: ", err);
+  });
+});
+
+
 var section = "quote";
 var heading = document.getElementById("heading");
 heading.innerText = "Quote Generator";
