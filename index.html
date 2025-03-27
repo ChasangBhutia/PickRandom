@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      PickRandom - A platfrom where you can generate random quotes, joke, and
+      facts
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/323fb6f098.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <h1>PickRandom<i class="fa-solid fa-shuffle"></i></h1>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/chasang"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/ChasangBhutia/"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://leetcode.com/u/Chasang/"
+            ><i class="fa-solid fa-code"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_chesans_47"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mainContainer">
+      <div class="buttons">
+        <button onclick="jokeSection()">Joke</button>
+        <button onclick="quoteSection()">Quote</button>
+        <button onclick="factsSection()">Facts</button>
+      </div>
+      <div class="container">
+        <h1 id="heading"></h1>
+        <div id="quote" class="quote-text">
+          <p>Click the button for a random <span id="buttonHeading"></span>!</p>
+        </div>
+        <p id="personName" class="personName"></p>
+        <button onclick="generator()" class="quote-btn">Get a Quote</button>
+      </div>
+    </div>
+    <footer>
+      <p>©PickRandom By @Chasang-<span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

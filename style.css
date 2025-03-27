@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+  }
+  
+  nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 130px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+  }
+  nav ul li a {
+    color: black;
+    font-size: 25px;
+  }
+  
+  .mainContainer {
+    display: flex;
+    gap: 20px;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .buttons button {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .quote-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .personName {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #fb8c00;
+  }
+  
+  footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  footer p {
+    color: grey;
+    font-size: 20px;
+  }
+  
